@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>هلا دليفري</title>
+<style>
+body{margin:0;font-family:Arial;background:#fff;color:#222}
+header{background:#ffdf00;padding:25px;text-align:center}
+main{padding:20px;max-width:500px;margin:auto}
+.card{background:#fff8cc;padding:18px;border-radius:14px}
+input,textarea,select,button{width:100%;box-sizing:border-box;padding:14px;margin:8px 0;border-radius:9px;border:1px solid #ccc;font-size:16px}
+button{background:#ffdf00;border:0;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>هلا دليفري</h1>
+<p>طلباتك توصلك لحد باب بيتك</p>
+<strong>الطبقة - سوريا</strong>
+</header>
+<main>
+<div class="card">
+<h2>اطلب الآن</h2>
+<form id="orderForm">
+<input placeholder="الاسم الكامل" required>
+<input type="tel" placeholder="رقم الهاتف" required>
+<input placeholder="العنوان بالتفصيل" required>
+<select required>
+<option value="">اختر نوع الطلب</option>
+<option>مطاعم</option>
+<option>بقالة</option>
+<option>صيدلية</option>
+<option>متاجر</option>
+<option>خضار وفواكه</option>
+<option>طلبات أخرى</option>
+</select>
+<textarea placeholder="تفاصيل الطلب" required></textarea>
+<p>الدفع نقداً عند الاستلام</p>
+<button type="submit">إرسال الطلب</button>
+</form>
+</div>
+</main>
+<script>
+document.getElementById('orderForm').onsubmit=function(e){
+e.preventDefault();
+alert('هذه نسخة تجريبية. استقبال الطلبات غير مفعل بعد.');
+};
+</script>
+</body>
+</html>
